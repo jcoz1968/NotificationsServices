@@ -15,9 +15,13 @@ namespace EmailService.Models
         [DisplayName("To Address")]
         public string ToAddress { get; set; }
 
-        [DisplayName("Display Name")]
+        [DisplayName("To Display Name")]
         [StringLength(75, MinimumLength = 1)]
-        public string DisplayName { get; set; }
+        public string ToDisplayName { get; set; }
+
+        [DisplayName("From Display Name")]
+        [StringLength(75, MinimumLength = 1)]
+        public string FromDisplayName { get; set; }
 
         [DisplayName("From Address")]
         [Required]
